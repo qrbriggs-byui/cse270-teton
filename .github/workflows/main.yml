@@ -41,14 +41,13 @@ jobs:
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    - name: Startup HTTP Server
+    - name: Startup HTTP Server and Test with pytest
       uses: Eun/http-server-action@v1.0.11
       with:
         directory: teton/1.6        
-    - name: Test with pytest
-      run: |
-        pytest
-    
+        run: |
+          pytest
+
   analyze:
     needs: build
     name: Analyze
@@ -70,7 +69,7 @@ jobs:
   
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
   
       # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
