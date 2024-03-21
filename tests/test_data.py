@@ -1,6 +1,5 @@
 import pytest
 import requests
-from requests_mock.mocker import Mocker
 
 @pytest.fixture
 def mock_requests_get(mocker):
