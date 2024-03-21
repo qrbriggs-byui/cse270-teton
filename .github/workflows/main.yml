@@ -120,8 +120,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          # Upload entire repository
-          path: '/teton/1.6'
+          # Upload only teton/1.6
+          path: 'teton/1.6'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
