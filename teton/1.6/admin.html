@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Chamber of Commerce Demonstration Site for WDD 230 - Winter 2023 - BYU-Idaho" />
+    <meta name="description" content="Chamber of Commerce Testing Site for CSE 270 - BYU-Idaho - 2024" />
     <title>Teton Idaho CoC</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" href="./styles/base.css" />
@@ -17,7 +17,6 @@
   <body>
     <div id="content">
     <header>
-      <div id="meet-greet">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
       <div class="header-top">        
           <div class="header-logo">
             <a href="index.html"><img src="./images/teton-logo-150.webp" alt="Teton Chamber of Commerce Logo"></a>            
@@ -38,15 +37,14 @@
         </button>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="discover.html">Discover</a></li>
-          <li><a href="directory.html">Directory</a></li>
           <li><a href="join.html">Join</a></li>
-          <li id="admin-menu"><a href="admin.html" class="active">Admin</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="admin.html" class="active">Admin</a></li>
         </ul>
       </nav>
       <div class="header-today"><p></p></div>
     </header>
-    <main class="admin-main">      
+    <main class="admin-main">
       <section class="login">
         <form>
           <fieldset>
@@ -64,10 +62,6 @@
         <p><input type="button" value="Logout" class="mysubmit" onclick="logout()"></p>
       </section>
     </main>
-    <section class="admin-disabled">
-      <h1>You have reached this page in error.</h1>
-      <h1>Administrative functions are not available.</h1>
-    </section>
     <footer>
       <div class="footer-content">
         <div class="footer-logo">
@@ -81,7 +75,7 @@
           <p>Weather Data courtesy of <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
         </div>
         <div class="footer-map">
-          <p><a href="https://goo.gl/maps/b17zTF1NkiE4FevSA" target="_blank"><img src="./images/google-maps.png" alt="Google maps icon"></a></p>
+          <p><img src="./images/google-maps.png" alt="Google Maps icon"></p>
           <a href="https://goo.gl/maps/b17zTF1NkiE4FevSA" target="_blank">Location Map</a>
         </div>
       </div>

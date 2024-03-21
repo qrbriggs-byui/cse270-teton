@@ -281,8 +281,7 @@ nav ul.menu-active{
 }
 
 .main-join{
-    grid-area: j;
-    display: none;
+    grid-area: j;    
 }
 
 .main-join p, .main-join h1{
@@ -560,7 +559,7 @@ nav ul.menu-active{
     display: none;
     text-align: center;
 }
-
+/*
 .admin-main{
     display: none;
 }
@@ -570,3 +569,4 @@ nav ul.menu-active{
     color: maroon;        
     text-align: center;   
 }
+*/
