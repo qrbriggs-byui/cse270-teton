@@ -44,7 +44,7 @@ jobs:
     - name: Startup HTTP Server and Test with pytest
       uses: Eun/http-server-action@v1.0.11
       with:
-        directory: teton/1.6
+        directory: .
         port: 8080
     - name: Run tests
       run: |
