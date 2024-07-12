@@ -22,7 +22,7 @@ class TestSmokeTestSuite():
     self.driver.quit()
   
   def test_test1NameandLogoTest(self):
-    self.driver.get("http://127.0.0.1:5500/teton/1.6/index.html")
+    self.driver.get("http://127.0.0.1:5500/teton/1.6/directory.html")
     self.driver.set_window_size(1200, 800)
     elements = self.driver.find_elements(By.CSS_SELECTOR, ".header-logo img")
     assert len(elements) > 0
